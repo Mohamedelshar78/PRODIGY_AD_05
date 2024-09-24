@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+        <com.budiyev.android.codescanner.CodeScannerView
+            android:id="@+id/scanner_view"
+            android:layout_width="match_parent"
+            android:layout_height="440dp" />
+
+    <TextView
+        android:id="@+id/scan_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Scan result will appear here"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center_horizontal"
+        />
+
+    <Button
+        android:id="@+id/open_link_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Open Link"
+        android:layout_gravity="center_horizontal"
+        app:backgroundTint="@null"
+        android:layout_marginHorizontal="16dp"
+        android:visibility="gone"/>
+    </LinearLayout>
